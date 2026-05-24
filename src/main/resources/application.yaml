@@ -1,0 +1,30 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/book_catalog
+    username: postgres
+    password: 123450
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+    show-sql: true
+
+    properties:
+      hibernate:
+        format_sql: true
+
+  liquibase:
+    enabled: false
+
+  security:
+    user:
+      name: user
+      password: user
+
+logging:
+  level:
+    com.bookcatalog: INFO
+
+server:
+  port: 8080
